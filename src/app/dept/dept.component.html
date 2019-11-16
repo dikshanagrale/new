@@ -1,0 +1,33 @@
+
+
+<h3>List of components</h3>
+<!-- <button (click)="Dosomething()">clickme</button> -->
+<button type="button"  class="btn btn-success" (click)="Dosomething()" style="margin-left: 150px">Add</button> &nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-danger"(click)="Removeme()">Remove</button>
+
+<!-- <button (click)="Removeme()">Remove</button> -->
+<br><br>
+
+<table border="2" style="height: 300px; width: 300px; margin-left: 100px;  background-color:darkkhaki">
+  <thead>
+
+    <td>NO</td>
+    <td>NAME</td>
+    <td>ADDRESS</td>
+    
+  </thead>
+  <tr *ngFor="let dept of depts">
+
+    <td>{{dept.DNo}}</td>
+    <td>{{dept.DName}}</td>
+    <td>{{dept.DAddress}}</td>
+  </tr> 
+</table>
+
+ 
+
+
+
+
+
+
